@@ -1,6 +1,6 @@
 FROM continuumio/miniconda3
 
-RUN conda install -c conda-forge pyproj jupyter requests geopandas
+RUN conda install -c conda-forge pyproj jupyter requests geopandas matplotlib
 
 COPY ./Fiona-1.8.18-cp37-cp37m-win_amd64.whl /install/Fiona-1.8.18-cp37-cp37m-win_amd64.whl
 
