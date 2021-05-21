@@ -1,6 +1,6 @@
 FROM continuumio/miniconda3
 
-RUN conda install -c conda-forge pyproj jupyter requests geopandas matplotlib 
+RUN conda install -c conda-forge pyproj jupyter requests geopandas matplotlib beautifulsoup selenium
 
 COPY ./Fiona-1.8.19-cp38-cp38-win_amd64.whl /install/Fiona-1.8.19-cp38-cp38-win_amd64.whl
 
