@@ -1,6 +1,6 @@
 FROM continuumio/miniconda3
 
-RUN conda install -c conda-forge pyproj jupyter requests geopandas matplotlib beautifulsoup selenium
+RUN conda install -c conda-forge pyproj jupyter requests geopandas 
 
 COPY ./Fiona-1.8.19-cp38-cp38-win_amd64.whl /install/Fiona-1.8.19-cp38-cp38-win_amd64.whl
 
@@ -15,4 +15,5 @@ RUN pip install rasterio \
     pip install plotly \
     pip install psutil \
     pip install -U kaleido \
-    pip install earthpy
+    pip install earthpy \
+    pip install beautifulsoup matplotlib selenium
