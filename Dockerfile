@@ -2,9 +2,7 @@ FROM continuumio/miniconda3
 
 RUN conda install -c conda-forge pyproj jupyter requests 
 
-RUN pip install numpy pandas rasterio geopandas rasterio beautifulsoup4 matplotlib selenium earthpy
-
-RUN pip install plotly psutil
+RUN pip install numpy pandas rasterio geopandas rasterio beautifulsoup4 matplotlib selenium plotly psutil earthpy
 
 RUN pip install -U kaleido
 
